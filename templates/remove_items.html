@@ -1,0 +1,15 @@
+
+ {%extends 'layout.html'%}
+{%block body%}
+<ul>
+  {%for item, quantity in items.items()%}
+  <li>{{item}}:{{quantity}}</li>
+  {%endfor%}
+</ul>
+<form  method="POST" >
+<label for="">ITEM</label>
+<input type="text" name='item'>
+<input type="submit">
+</form>
+{%endblock%}
+
